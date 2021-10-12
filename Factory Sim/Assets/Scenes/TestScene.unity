@@ -165,6 +165,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5061452209031720663, guid: a249b38044d1c1942bc5a4e596ca7523, type: 3}
+      propertyPath: near clip plane
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 5061452209857812232, guid: a249b38044d1c1942bc5a4e596ca7523, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -241,6 +245,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7547601824188373623, guid: a249b38044d1c1942bc5a4e596ca7523, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 96cb44c5343c99644b844869120eede2, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a249b38044d1c1942bc5a4e596ca7523, type: 3}
 --- !u!20 &346334942 stripped
