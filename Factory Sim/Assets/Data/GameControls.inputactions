@@ -147,6 +147,52 @@
                     "isPartOfComposite": false
                 }
             ]
+        },
+        {
+            "name": "ToolControls",
+            "id": "e4a0fcf8-aeeb-43ab-a9e2-9d5f30da2a85",
+            "actions": [
+                {
+                    "name": "PrimaryUse",
+                    "type": "Button",
+                    "id": "ee28afd0-f4dc-47e5-bdd2-23cc39140ec5",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "SecondaryUse",
+                    "type": "Button",
+                    "id": "46aba1f9-7286-45c5-89dd-b49995ed90f2",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "c958cf56-011c-401d-9750-412b6a6320d3",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard & Mouse",
+                    "action": "PrimaryUse",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "91bd29ea-901a-4e50-a07a-7e65d2c07cda",
+                    "path": "<Mouse>/rightButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard & Mouse",
+                    "action": "SecondaryUse",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
         }
     ],
     "controlSchemes": [
@@ -161,6 +207,17 @@
                 },
                 {
                     "devicePath": "<Mouse>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        },
+        {
+            "name": "Controller",
+            "bindingGroup": "Controller",
+            "devices": [
+                {
+                    "devicePath": "<Gamepad>",
                     "isOptional": false,
                     "isOR": false
                 }
