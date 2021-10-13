@@ -13,8 +13,6 @@ MonoBehaviour:
   m_Name: Condenser
   m_EditorClassIdentifier: 
   name: Crystal Consenser
-  craftTime: 2
-  outcome:
-    name: Condenser
-    count: 1
+  craftTime: 0
+  outcome: {fileID: 8756809225322003797, guid: bce578aba831deb4e9a74d2474f58c9d, type: 3}
   expectedResources: []
