@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class BuildTool : Tool
 {
@@ -9,13 +10,18 @@ public class BuildTool : Tool
     public Material validMaterial;
     public Material invalidMaterial;
 
+    public float rotateSpeed = 1;
+
     Camera playerCamera;
     Placeable chosenObject;
     GameObject preview;
     int index = 0;
     bool validPlacement = false;
+    float previewRotation;
 
-    public override void PrimaryUse()
+    #region PlayerInput
+
+    protected override void PrimaryUse()
     {
         if (preview != null)
         {
@@ -28,10 +34,8 @@ public class BuildTool : Tool
         }
     }
 
-    public override void SecondaryUse()
+    protected override void SecondaryUse()
     {
-        Debug.Log("I am choosing an object");
-
         //TEMPORARY USE
         //Plan to implement UI for this later. Secondary Use will likely be to destroy buildings
         //It's better to have them all in one tool than to make people switch I think
@@ -44,9 +48,15 @@ public class BuildTool : Tool
             SelectChosen(chosen.GetComponent<Placeable>());
             index++;
         }
-
-        Debug.Log("I have chosen an object: " + chosenObject.name);
     }
+
+    public void OnScroll(InputValue value)
+    {
+        previewRotation += value.Get<Vector2>().y * rotateSpeed;
+    }
+
+    #endregion
+
 
     void Start()
     {
@@ -62,10 +72,30 @@ public class BuildTool : Tool
 
             if (Physics.Raycast(ray, out hit, 10f))
             {
-                //hit.point to get the position. NOT hit.transform.position
+                validPlacement = true;
+
+                if (preview != null)
+                {
+                    MovePreview(hit);
+                    preview.transform.Rotate(Vector3.up, previewRotation);
+
+                    validPlacement = CheckValidPlacement(hit);
+                }
+                else if (validPlacement)
+                {
+                    CreatePreview(chosenObject.previewModel);
+                }
+            }
+            else
+            {
+                validPlacement = false;
+                if (preview != null) Destroy(preview);
             }
         }
     }
+
+
+    #region Selection
 
     public void SelectChosen(Placeable placeable)
     {
@@ -85,10 +115,13 @@ public class BuildTool : Tool
         {
             //Remove everything to create a fresh start
             if (preview != null) Destroy(preview);
-            preview = null;
             chosenObject = null;
         }
     }
+
+    #endregion
+
+    #region PreviewControls
 
     void CreatePreview(GameObject model)
     {
@@ -100,30 +133,43 @@ public class BuildTool : Tool
         foreach (Transform previewTransform in previewTransforms)
         {
             GameObject previewGO = previewTransform.gameObject;
-            //Remove colliders to avoid hitting materials and such and ruining the factory flow
-            previewGO.GetComponent<Collider>().enabled = false;
             //Set to ignore raycast so that the preview doesn't fly towards our face from moving in front of itself
             previewGO.layer = LayerMask.NameToLayer("Ignore Raycast");
         }
     }
 
-
-    void MovePreview()
+    void MovePreview(RaycastHit hit)
     {
-
+        preview.transform.position = hit.point;
+        preview.transform.rotation = Quaternion.FromToRotation(Vector3.up, hit.normal);
     }
 
-    bool CheckValidPlacement()
-    {
-        bool validPlacement = true;
+    #endregion
 
-        
+    #region PlacementValidity
+
+    bool CheckValidPlacement(RaycastHit hit)
+    {
+        bool valid = true;
+
+        //Checking angle of the building
+        bool withinAngle = true;
+        if (chosenObject.invertedPlacementAngle)
+        {
+            if (preview.transform.up.y > chosenObject.maxPlacementAngle) withinAngle = false;
+        }
+        else
+        {
+            if (preview.transform.up.y < chosenObject.maxPlacementAngle) withinAngle = false;
+        }
+
+        valid = (withinAngle); //Include && for other options
 
         //Change materials to reflect whether or not the object can be placed
-        if (validPlacement) ChangePreviewMaterials(validMaterial);
+        if (valid) ChangePreviewMaterials(validMaterial);
         else ChangePreviewMaterials(invalidMaterial);
 
-        return validPlacement;
+        return valid; 
     }
 
     void ChangePreviewMaterials(Material currentMat)
@@ -139,4 +185,7 @@ public class BuildTool : Tool
             }
         }
     }
+
+    #endregion
+
 }
