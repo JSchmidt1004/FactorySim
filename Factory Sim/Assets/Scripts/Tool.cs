@@ -5,17 +5,34 @@ using UnityEngine;
 public abstract class Tool : MonoBehaviour
 {
     public GameObject model;
+    protected bool altAction = false;
 
     protected abstract void PrimaryUse();
     protected abstract void SecondaryUse();
 
-    public virtual void OnPrimaryUse()
+    protected virtual void AltPrimaryUse()
     {
         PrimaryUse();
+    }
+    protected virtual void AltSecondaryUse()
+    {
+        SecondaryUse();
+    }
+    
+    public virtual void OnPrimaryUse()
+    {
+        if (altAction) AltPrimaryUse();
+        else PrimaryUse();
     }
 
     public virtual void OnSecondaryUse()
     {
-        SecondaryUse();
+        if (altAction) AltSecondaryUse();
+        else SecondaryUse();
+    }
+
+    public virtual void OnAltAction()
+    {
+        altAction = !altAction;
     }
 }

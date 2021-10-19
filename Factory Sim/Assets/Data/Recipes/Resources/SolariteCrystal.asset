@@ -12,9 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f66f205be66fb444bb68843195b45c39, type: 3}
   m_Name: SolariteCrystal
   m_EditorClassIdentifier: 
-  name: Solarite Crystal
+  RecipeName: Solarite Crystal
   craftTime: 0.5
-  outcome:
-    name: Solarite Crystal
-    count: 1
+  outcome: {fileID: 0}
   expectedResources: []

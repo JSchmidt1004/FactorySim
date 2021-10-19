@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f66f205be66fb444bb68843195b45c39, type: 3}
   m_Name: Condenser
   m_EditorClassIdentifier: 
-  name: Crystal Consenser
+  RecipeName: Condenser
   craftTime: 0
   outcome: {fileID: 8756809225322003797, guid: bce578aba831deb4e9a74d2474f58c9d, type: 3}
   expectedResources: []

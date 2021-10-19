@@ -76,8 +76,15 @@ public class BuildTool : Tool
 
                 if (preview != null)
                 {
-                    MovePreview(hit);
-                    preview.transform.Rotate(Vector3.up, previewRotation);
+                    if (altAction)
+                    {
+                        SnapPreview();
+                    }
+                    else
+                    {
+                        MovePreview(hit);
+                        preview.transform.Rotate(Vector3.up, previewRotation);
+                    }
 
                     validPlacement = CheckValidPlacement(hit);
                 }
@@ -142,6 +149,46 @@ public class BuildTool : Tool
     {
         preview.transform.position = hit.point;
         preview.transform.rotation = Quaternion.FromToRotation(Vector3.up, hit.normal);
+    }
+
+    void SnapPreview()
+    {
+        //Snap point A and B, and the transform
+
+        //A is the place I want to be
+        SnapPoint other = null;
+        //B is the place that's snapping
+        SnapPoint currentSnap = null;
+
+        SnapPoint[] snapPoints = preview.GetComponentsInChildren<SnapPoint>();
+
+        foreach (SnapPoint snapPoint in snapPoints)
+        {
+            other = snapPoint.CheckNearby();
+            if (other != null)
+            {
+                currentSnap = snapPoint;
+                break;
+            }
+        }
+
+        if (other != null && currentSnap != null)
+        {
+            //I need the unnormalized "direction vector" from transform to B
+            Vector3 offset = preview.transform.position - currentSnap.transform.position;
+
+
+            //I need to move the transform to A plus the direction vector
+            //(placedSnapPoint.position + (previewBase.position - previewSnapPoint.position))
+            // A + (transform - B)
+            preview.transform.position = other.transform.position + offset;
+
+
+
+            //Then I need to rotate around A until I'm facing the direction of A's forward?
+        }
+
+
     }
 
     #endregion

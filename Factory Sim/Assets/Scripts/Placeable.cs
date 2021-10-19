@@ -16,29 +16,30 @@ public class Placeable : MonoBehaviour
     [Range(-1f, 1f)]
     public float maxPlacementAngle = 0.75f;
     public bool invertedPlacementAngle;
+    public List<SnapPoint> snapPoints = new List<SnapPoint>();
 
     public GameObject previewModel;
 
-    public bool CheckValid()
-    {
-        bool isValid = true;
+    //public bool CheckValid()
+    //{
+    //    bool isValid = true;
 
 
-        return isValid;
-    }
+    //    return isValid;
+    //}
 
-    public bool FactoryValid()
-    {
-        return true;
-    }
+    //public bool FactoryValid()
+    //{
+    //    return true;
+    //}
 
-    public bool ConveyorValid()
-    {
-        return true;
-    }
+    //public bool ConveyorValid()
+    //{
+    //    return true;
+    //}
 
-    public bool BuildingValid()
-    {
-        return true;
-    }
+    //public bool BuildingValid()
+    //{
+    //    return true;
+    //}
 }

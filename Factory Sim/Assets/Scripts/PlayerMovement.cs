@@ -53,7 +53,6 @@ public class PlayerMovement : MonoBehaviour
         currentMovement.z *= currentSpeed;
 
         currentMovement = transform.TransformDirection(currentMovement);
-        //currentMovement.y = movement.y;
 
         //Gravity
         if (!characterController.isGrounded) movement.y -= 9.85f * Time.deltaTime;

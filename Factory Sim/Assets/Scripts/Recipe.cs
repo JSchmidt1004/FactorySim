@@ -14,7 +14,7 @@ public class Recipe : ScriptableObject
         public int count = 1;
     }
 
-    public string name = "Default Recipe";
+    public string RecipeName = "Default Recipe";
     public float craftTime = 0.5f;
 
     public GameObject outcome;
