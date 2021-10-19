@@ -17,7 +17,7 @@ public class PlayerMovement : MonoBehaviour
     Rigidbody rb;
     float yRotation;
     float xRotation;
-    public bool sprinting = false;
+    bool sprinting = false;
     Vector3 movement;
 
     void Start()
@@ -52,11 +52,14 @@ public class PlayerMovement : MonoBehaviour
         currentMovement.x *= currentSpeed;
         currentMovement.z *= currentSpeed;
 
+        currentMovement = transform.TransformDirection(currentMovement);
+
         //Gravity
         if (!characterController.isGrounded) movement.y -= 9.85f * Time.deltaTime;
         else movement.y -= 0.05f * Time.deltaTime;
 
         characterController.Move(currentMovement * Time.deltaTime);
+        
     }
 
     void OnMove(InputValue value)
