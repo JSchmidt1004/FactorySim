@@ -57,6 +57,7 @@ public class BuildTool : Tool
 
     #endregion
 
+    #region UnityDefaults
 
     void Start()
     {
@@ -101,6 +102,7 @@ public class BuildTool : Tool
         }
     }
 
+    #endregion
 
     #region Selection
 
@@ -177,18 +179,14 @@ public class BuildTool : Tool
             //I need the unnormalized "direction vector" from transform to B
             Vector3 offset = preview.transform.position - currentSnap.transform.position;
 
-
             //I need to move the transform to A plus the direction vector
-            //(placedSnapPoint.position + (previewBase.position - previewSnapPoint.position))
             // A + (transform - B)
             preview.transform.position = other.transform.position + offset;
 
-
-
             //Then I need to rotate around A until I'm facing the direction of A's forward?
+            float angle = Vector3.Angle(currentSnap.transform.forward, other.transform.forward);
+            preview.transform.RotateAround(other.transform.position, Vector3.up, angle);
         }
-
-
     }
 
     #endregion
