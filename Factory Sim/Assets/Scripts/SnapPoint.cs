@@ -16,38 +16,40 @@ public class SnapPoint : MonoBehaviour
     public eType snapType = eType.General;
     public float distance = 1.0f;
 
-    private void OnDrawGizmos()
-    {
-        //Gizmos.DrawCube(transform.position, new Vector3(distance / 2, distance / 2, distance / 2));
-    }
 
     public SnapPoint CheckNearby()
     {
         List<SnapPoint> nearbyPoints = GetNearbySnapPoints();
 
-        SnapPoint other = null;
+        List<eType> compatibleTypes = new List<eType>();
 
         switch (snapType)
         {
             case eType.General:
-                other = CheckGeneral(nearbyPoints);
+                compatibleTypes.Add(eType.General);
                 break;
             case eType.Input:
-                other = CheckInput(nearbyPoints);
+                compatibleTypes.Add(eType.Output);
+                compatibleTypes.Add(eType.ConveyorEnd);
                 break;
             case eType.Output:
-                other = CheckOutput(nearbyPoints);
+                compatibleTypes.Add(eType.Input);
+                compatibleTypes.Add(eType.ConveyorStart);
                 break;
             case eType.ConveyorStart:
-                other = CheckConveyorStart(nearbyPoints);
+                compatibleTypes.Add(eType.Output);
+                compatibleTypes.Add(eType.ConveyorEnd);
                 break;
             case eType.ConveyorEnd:
-                other = CheckConveyorEnd(nearbyPoints);
+                compatibleTypes.Add(eType.Input);
+                compatibleTypes.Add(eType.ConveyorStart);
                 break;
             default:
-                other = CheckGeneral(nearbyPoints);
+                compatibleTypes.Add(eType.General);
                 break;
         }
+
+        SnapPoint other = CheckPoints(nearbyPoints, compatibleTypes);
 
         return other;
     }
@@ -74,53 +76,17 @@ public class SnapPoint : MonoBehaviour
         return nearbyPoints;
     }
 
-    SnapPoint CheckGeneral(List<SnapPoint> nearbyPoints)
-    {
-        foreach (SnapPoint point in nearbyPoints)
-        {
-            if (point.snapType == eType.General) return point;
-        }
-
-        return null;
-    }
-
-    SnapPoint CheckInput(List<SnapPoint> nearbyPoints)
+    SnapPoint CheckPoints(List<SnapPoint> nearbyPoints, List<eType> compatibleTypes)
     {
         foreach(SnapPoint point in nearbyPoints)
         {
-            if (point.snapType == eType.Output) return point;
+            foreach (eType type in compatibleTypes)
+            {
+                if (point.snapType == type) return point;
+            }
         }
 
         return null;
     }
 
-    SnapPoint CheckOutput(List<SnapPoint> nearbyPoints)
-    {
-        foreach (SnapPoint point in nearbyPoints)
-        {
-            if (point.snapType == eType.Input) return point;
-        }
-
-        return null;
-    }
-
-    SnapPoint CheckConveyorStart(List<SnapPoint> nearbyPoints)
-    {
-        foreach (SnapPoint point in nearbyPoints)
-        {
-            if (point.snapType == eType.Output) return point;
-        }
-
-        return null;
-    }
-
-    SnapPoint CheckConveyorEnd(List<SnapPoint> nearbyPoints)
-    {
-        foreach (SnapPoint point in nearbyPoints)
-        {
-            if (point.snapType == eType.Input) return point;
-        }
-
-        return null;
-    }
 }

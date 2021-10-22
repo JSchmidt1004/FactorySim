@@ -20,26 +20,5 @@ public class Placeable : MonoBehaviour
 
     public GameObject previewModel;
 
-    //public bool CheckValid()
-    //{
-    //    bool isValid = true;
 
-
-    //    return isValid;
-    //}
-
-    //public bool FactoryValid()
-    //{
-    //    return true;
-    //}
-
-    //public bool ConveyorValid()
-    //{
-    //    return true;
-    //}
-
-    //public bool BuildingValid()
-    //{
-    //    return true;
-    //}
 }
