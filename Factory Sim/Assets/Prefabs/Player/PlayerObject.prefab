@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 613713330}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.5, z: 0.25}
+  m_LocalPosition: {x: 0.25, y: -0.25, z: 0.25}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5061452209031720656}
@@ -86,7 +86,7 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.1
+  near clip plane: 0.125
   far clip plane: 1000
   field of view: 60
   orthographic: 0
@@ -125,6 +125,7 @@ GameObject:
   - component: {fileID: 5061452209857812232}
   - component: {fileID: 5061452209857812233}
   - component: {fileID: 244645512}
+  - component: {fileID: 6370952219795306262}
   - component: {fileID: -8844758293357546272}
   - component: {fileID: 244645511}
   m_Layer: 2
@@ -179,9 +180,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf981625c3656cc4a95595bf29633e03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tools: []
+  tools:
+  - {fileID: 3961514732040115434, guid: f0aea75d1cd9f0741ab75757dbefc406, type: 3}
   currentTool: {fileID: 0}
-  toolSpawn: {fileID: 0}
+  toolSpawn: {fileID: 613713331}
+--- !u!114 &6370952219795306262
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5061452209857812239}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa7babd965ec7f84780c2429f5f6fc97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!143 &-8844758293357546272
 CharacterController:
   m_ObjectHideFlags: 0

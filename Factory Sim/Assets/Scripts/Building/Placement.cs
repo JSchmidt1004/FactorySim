@@ -1,105 +1,44 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.InputSystem;
 
-public class BuildTool : Tool
+public class Placement : MonoBehaviour
 {
-    public List<Recipe> placeableRecipes = new List<Recipe>();
-
     public Material validMaterial;
     public Material invalidMaterial;
-
     public float rotateSpeed = 1;
 
-    Camera playerCamera;
+    public bool chosenActive { get { return (chosenObject != null); } }
+    public bool previewActive { get { return (preview != null); } }
+
     Placeable chosenObject;
     GameObject preview;
-    int index = 0;
-    bool validPlacement = false;
+
     float previewRotation;
 
-    #region PlayerInput
-
-    protected override void PrimaryUse()
+    public void Place(bool validPlacement)
     {
-        if (preview != null)
+        if (previewActive)
         {
-            if(validPlacement)
+            if (validPlacement)
             {
                 Transform location = preview.transform;
                 Instantiate(chosenObject, location.position, location.rotation);
-                validPlacement = false;
             }
         }
     }
 
-    protected override void SecondaryUse()
+    public void Rotate(float direction)
     {
-        //TEMPORARY USE
-        //Plan to implement UI for this later. Secondary Use will likely be to destroy buildings
-        //It's better to have them all in one tool than to make people switch I think
-
-        //Swap between all of the recipes with a simple right click
-        if (placeableRecipes.Count > 0)
-        {
-            int current = index % placeableRecipes.Count;
-            GameObject chosen = placeableRecipes[current].outcome;
-            SelectChosen(chosen.GetComponent<Placeable>());
-            index++;
-        }
+        previewRotation += direction * rotateSpeed;
     }
-
-    public void OnScroll(InputValue value)
-    {
-        previewRotation += value.Get<Vector2>().y * rotateSpeed;
-    }
-
-    #endregion
 
     #region UnityDefaults
 
-    void Start()
-    {
-        playerCamera = Camera.main;   
-    }
-
     void Update()
     {
-        if (chosenObject != null)
-        {
-            RaycastHit hit;
-            Ray ray = new Ray(playerCamera.transform.position, playerCamera.transform.forward);
 
-            if (Physics.Raycast(ray, out hit, 10f))
-            {
-                validPlacement = true;
-
-                if (preview != null)
-                {
-                    if (altAction)
-                    {
-                        SnapPreview();
-                    }
-                    else
-                    {
-                        MovePreview(hit);
-                        preview.transform.Rotate(Vector3.up, previewRotation);
-                    }
-
-                    validPlacement = CheckValidPlacement(hit);
-                }
-                else if (validPlacement)
-                {
-                    CreatePreview(chosenObject.previewModel);
-                }
-            }
-            else
-            {
-                validPlacement = false;
-                if (preview != null) Destroy(preview);
-            }
-        }
+        if (previewActive) preview.transform.Rotate(Vector3.up, previewRotation);
     }
 
     #endregion
@@ -147,13 +86,18 @@ public class BuildTool : Tool
         }
     }
 
-    void MovePreview(RaycastHit hit)
+    public void DestroyPreview()
+    {
+        if (previewActive) Destroy(preview);
+    }
+
+    public void MovePreview(RaycastHit hit)
     {
         preview.transform.position = hit.point;
         preview.transform.rotation = Quaternion.FromToRotation(Vector3.up, hit.normal);
     }
 
-    void SnapPreview()
+    public void SnapPreview()
     {
         //Snap point A and B, and the transform
 
@@ -193,7 +137,7 @@ public class BuildTool : Tool
 
     #region PlacementValidity
 
-    bool CheckValidPlacement(RaycastHit hit)
+    public bool CheckValidPlacement(RaycastHit hit, bool other = true)
     {
         bool valid = true;
 
@@ -208,13 +152,13 @@ public class BuildTool : Tool
             if (preview.transform.up.y < chosenObject.maxPlacementAngle) withinAngle = false;
         }
 
-        valid = (withinAngle); //Include && for other options
+        valid = (withinAngle && other);
 
         //Change materials to reflect whether or not the object can be placed
         if (valid) ChangePreviewMaterials(validMaterial);
         else ChangePreviewMaterials(invalidMaterial);
 
-        return valid; 
+        return valid;
     }
 
     void ChangePreviewMaterials(Material currentMat)
@@ -232,5 +176,4 @@ public class BuildTool : Tool
     }
 
     #endregion
-
 }
