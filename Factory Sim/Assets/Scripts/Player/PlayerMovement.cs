@@ -62,30 +62,44 @@ public class PlayerMovement : MonoBehaviour
         
     }
 
+    #region Controls
+
     void OnMove(InputValue value)
     {
+        if (MenuManager.inMenu) return;
+
         movement.x = Mathf.Clamp(value.Get<Vector2>().x, -1.0f, 1.0f);
         movement.z = Mathf.Clamp(value.Get<Vector2>().y, -1.0f, 1.0f);
     }
 
     void OnSprint()
     {
+        if (MenuManager.inMenu) return;
+
         sprinting = !sprinting;
     }
 
     void OnJump()
     {
+        if (MenuManager.inMenu) return;
+
         if (characterController.isGrounded)
             movement.y = jumpHeight;
     }
 
     void OnMouseX(InputValue value)
     {
+        if (MenuManager.inMenu) return;
+
         yRotation = value.Get<float>() * turnSpeed;
     }
 
     void OnMouseY(InputValue value)
     {
+        if (MenuManager.inMenu) return;
+
         xRotation += value.Get<float>() * turnSpeed;
     }
+
+    #endregion
 }

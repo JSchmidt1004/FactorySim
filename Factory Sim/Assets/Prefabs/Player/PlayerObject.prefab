@@ -166,7 +166,7 @@ MonoBehaviour:
   walkSpeed: 6.5
   sprintSpeed: 10
   turnSpeed: 0.05
-  jumpHeight: 7.5
+  jumpHeight: 5
   playerCamera: {fileID: 5061452209031720663}
 --- !u!114 &244645512
 MonoBehaviour:
@@ -196,6 +196,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7babd965ec7f84780c2429f5f6fc97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inventory: {fileID: 11400000, guid: 7da83c65ee8a7dc438bb97f910ff5f65, type: 2}
+  InventoryMenu: {fileID: 0}
+  InventorySlotUI: {fileID: 3356108731824075765, guid: d24ecbacb39c96146895b73a68337ef1, type: 3}
+  hotbar: {fileID: 11400000, guid: 346c02307e075214b8bfec0ed6e3d55f, type: 2}
+  hotbarMenu: {fileID: 0}
 --- !u!143 &-8844758293357546272
 CharacterController:
   m_ObjectHideFlags: 0

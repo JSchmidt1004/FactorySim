@@ -5,6 +5,7 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "Inventory", menuName = "ScriptableObjects/Inventory")]
 public class InventoryObject : ScriptableObject
 {
+    public int slotCount;
 
     public List<InventorySlot> Container = new List<InventorySlot>();
 

@@ -21,18 +21,24 @@ public abstract class Tool : MonoBehaviour
     
     public virtual void OnPrimaryUse()
     {
+        if (MenuManager.inMenu) return;
+
         if (altAction) AltPrimaryUse();
         else PrimaryUse();
     }
 
     public virtual void OnSecondaryUse()
     {
+        if (MenuManager.inMenu) return;
+
         if (altAction) AltSecondaryUse();
         else SecondaryUse();
     }
 
     public virtual void OnAltAction()
     {
+        if (MenuManager.inMenu) return;
+
         altAction = !altAction;
     }
 }

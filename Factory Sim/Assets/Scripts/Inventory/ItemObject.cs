@@ -15,6 +15,8 @@ public abstract class ItemObject : ScriptableObject
     public ItemType type;
     public int maxStack = 100;
 
+    public Sprite icon;
+
     [TextArea(15, 20)]
     public string description;
 }
