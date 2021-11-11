@@ -1,0 +1,52 @@
+{
+    "name": "MenuControls",
+    "maps": [
+        {
+            "name": "MenuControls",
+            "id": "d61cdca6-80ea-4067-8cd2-f44d4e5afd0d",
+            "actions": [
+                {
+                    "name": "CloseMenu",
+                    "type": "Button",
+                    "id": "e09c68b1-63c7-4557-a238-1d20d4946223",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "OpenBackpack",
+                    "type": "Button",
+                    "id": "6ceb1ec0-abcd-4d48-bc69-0cebbcc3d88f",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "86a445f9-9d82-4bcb-b804-e806340cffa3",
+                    "path": "<Keyboard>/escape",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard & Mouse",
+                    "action": "CloseMenu",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c0c3616f-54ff-4907-b98f-08f25c9dbe3f",
+                    "path": "<Keyboard>/i",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard & Mouse",
+                    "action": "OpenBackpack",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

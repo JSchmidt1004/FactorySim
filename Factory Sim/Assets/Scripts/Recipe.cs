@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "Data", menuName = "Recipes/Recipe")]
+[CreateAssetMenu(fileName = "Recipe", menuName = "ScriptableObjects/Recipes/Recipe")]
 public class Recipe : ScriptableObject
 {
     [Serializable]
