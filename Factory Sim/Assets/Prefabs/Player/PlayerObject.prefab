@@ -197,7 +197,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inventory: {fileID: 11400000, guid: 7da83c65ee8a7dc438bb97f910ff5f65, type: 2}
-  InventoryMenu: {fileID: 0}
+  InventoryScreen: {fileID: 0}
   InventorySlotUI: {fileID: 3356108731824075765, guid: d24ecbacb39c96146895b73a68337ef1, type: 3}
   hotbar: {fileID: 11400000, guid: 346c02307e075214b8bfec0ed6e3d55f, type: 2}
   hotbarMenu: {fileID: 0}

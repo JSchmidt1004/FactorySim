@@ -14,6 +14,6 @@ public class MenuScreen : MonoBehaviour
 
     public string menuName;
     public List<MenuItem> menuItems = new List<MenuItem>();
-    public bool openMenu = false;
+    public bool openMenu { get; set; } = false;
 
 }

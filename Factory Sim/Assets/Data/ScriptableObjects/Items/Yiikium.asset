@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Yiikium
   m_EditorClassIdentifier: 
   prefab: {fileID: 0}
-  type: 1
+  icon: {fileID: 21300000, guid: cec7dc22d2000f04f97c3d06225883ca, type: 3}
+  type: 2
   maxStack: 100
   description: From the darkest depths of the soul space, it vibrates with motion.

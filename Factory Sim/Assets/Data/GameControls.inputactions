@@ -251,6 +251,14 @@
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
+                },
+                {
+                    "name": "OpenRadialMenu",
+                    "type": "Button",
+                    "id": "c3ba773a-8ec0-4724-be80-28105c47bb5d",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Press(behavior=2)"
                 }
             ],
             "bindings": [
@@ -273,6 +281,17 @@
                     "processors": "",
                     "groups": "Keyboard & Mouse",
                     "action": "OpenBackpack",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "56a34d57-3161-486d-bb2c-f4e8de7c2869",
+                    "path": "<Keyboard>/tab",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard & Mouse",
+                    "action": "OpenRadialMenu",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
