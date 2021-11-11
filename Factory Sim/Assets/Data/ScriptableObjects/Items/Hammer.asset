@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75146d9d55a23914c85f835af3cff424, type: 3}
   m_Name: Hammer
   m_EditorClassIdentifier: 
-  prefab: {fileID: 0}
+  prefab: {fileID: 3961514732040115439, guid: f0aea75d1cd9f0741ab75757dbefc406, type: 3}
+  icon: {fileID: 21300000, guid: 24cc57c4460a7d94a92c60ac282c7860, type: 3}
   type: 0
   maxStack: 1
   description: A hammer used to build factories, floors, walls, and conveyors.

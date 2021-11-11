@@ -92,6 +92,11 @@ public class BuildTool : Tool
         }
     }
 
+    void OnDestroy()
+    {
+        placement.DestroyPreview();
+    }
+
     #endregion
 
     bool HasRecipeResources()

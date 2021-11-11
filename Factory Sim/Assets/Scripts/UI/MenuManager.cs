@@ -6,29 +6,27 @@ using UnityEngine.InputSystem;
 public class MenuManager : MonoBehaviour
 {
     public List<MenuScreen> menus = new List<MenuScreen>();
-    public PlayerMovement player;
 
-    public static bool inMenu = false;
-
-    GameControls gameControls;
+    public static bool inMenu { get; set; } = false;
+    public static Vector2 mousePosition { get; set; }
 
     #region UnityDefaults
 
     void Awake()
     {
-        gameControls = new GameControls();
-
         CloseAllMenus();
     }
 
-    void OnEnable()
+    void Update()
     {
-        gameControls.Enable();
-    }
-
-    void OnDisable()
-    {
-        gameControls.Disable();
+        if (inMenu)
+        {
+            mousePosition = Mouse.current.position.ReadValue();
+        }
+        else
+        {
+            mousePosition = Vector2.zero;
+        }
     }
 
     #endregion
@@ -94,11 +92,27 @@ public class MenuManager : MonoBehaviour
         if (!menuScreen.openMenu)
         {
             OpenMenu(menuScreen);
-            player.GetComponent<Backpack>().UpdateSlots();
         }
         else
         {
             CloseMenu(menuScreen);
+            inMenu = false;
+        }
+    }
+
+    public void OnOpenRadialMenu()
+    {
+        MenuScreen menuScreen = FindMenu("RadialMenu");
+
+        if (!menuScreen.openMenu)
+        {
+            OpenMenu(menuScreen);
+            menuScreen.GetComponentInChildren<RadialMenu>().Open();
+        }
+        else
+        {
+            CloseMenu(menuScreen);
+            menuScreen.GetComponentInChildren<RadialMenu>().Close();
             inMenu = false;
         }
     }

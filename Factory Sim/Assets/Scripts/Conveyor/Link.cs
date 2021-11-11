@@ -13,7 +13,7 @@ public class Link
     public float bounceHeight = 1;
     public float bounceSpeed = 1;
 
-    public List<InventoryItem> items = new List<InventoryItem>();
+    public List<GroundInventoryItem> items = new List<GroundInventoryItem>();
 
 
     float timeSinceStart;
@@ -22,7 +22,7 @@ public class Link
     {
         for (int i = 0; i < items.Count; i++)
         {
-            InventoryItem item = items[i];
+            GroundInventoryItem item = items[i];
 
             Vector3 targetPosition = next.targetPostition.position;
 

@@ -4,28 +4,18 @@ using UnityEngine;
 
 public class ToolManager : MonoBehaviour
 {
-    public List<Tool> tools = new List<Tool>();
     public Tool currentTool;
-
     public Transform toolSpawn;
 
-    GameObject spawnedModel;
+    static GameObject spawnedModel;
 
-    void Start()
+    public void Equip(Tool tool)
     {
-        if (tools.Count > 0)
-        {
-            currentTool = tools[0];
-            Equip();
-        }    
+        currentTool = tool;
+        spawnedModel = Instantiate(tool.model, toolSpawn);
     }
 
-    public virtual void Equip()
-    {
-        spawnedModel = Instantiate(currentTool.model, toolSpawn);
-    }
-
-    public virtual void Unequip()
+    public void Unequip()
     {
         Destroy(spawnedModel);
     }

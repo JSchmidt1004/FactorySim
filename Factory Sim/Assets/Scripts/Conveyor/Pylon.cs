@@ -21,7 +21,7 @@ public class Pylon : MonoBehaviour
         }
     }
 
-    public void OnReached(Link from, InventoryItem item)
+    public void OnReached(Link from, GroundInventoryItem item)
     {
         RemoveFromLink(from, item);
 
@@ -39,7 +39,7 @@ public class Pylon : MonoBehaviour
         }
     }
 
-    void AddToLink(Link link, InventoryItem item)
+    void AddToLink(Link link, GroundInventoryItem item)
     {
         Rigidbody rb = item.GetComponent<Rigidbody>();
         if (rb != null) rb.useGravity = false;
@@ -47,7 +47,7 @@ public class Pylon : MonoBehaviour
         link.items.Add(item);
     }
 
-    void RemoveFromLink(Link link, InventoryItem item)
+    void RemoveFromLink(Link link, GroundInventoryItem item)
     {
         link.items.Remove(item);
     }
