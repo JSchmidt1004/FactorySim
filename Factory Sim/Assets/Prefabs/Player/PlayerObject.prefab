@@ -128,6 +128,7 @@ GameObject:
   - component: {fileID: 6370952219795306262}
   - component: {fileID: -8844758293357546272}
   - component: {fileID: 244645511}
+  - component: {fileID: 525765693}
   m_Layer: 2
   m_Name: PlayerObject
   m_TagString: Untagged
@@ -180,8 +181,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf981625c3656cc4a95595bf29633e03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tools:
-  - {fileID: 3961514732040115434, guid: f0aea75d1cd9f0741ab75757dbefc406, type: 3}
   currentTool: {fileID: 0}
   toolSpawn: {fileID: 613713331}
 --- !u!114 &6370952219795306262
@@ -196,11 +195,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7babd965ec7f84780c2429f5f6fc97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inventory: {fileID: 11400000, guid: 7da83c65ee8a7dc438bb97f910ff5f65, type: 2}
-  InventoryScreen: {fileID: 0}
-  InventorySlotUI: {fileID: 3356108731824075765, guid: d24ecbacb39c96146895b73a68337ef1, type: 3}
-  hotbar: {fileID: 11400000, guid: 346c02307e075214b8bfec0ed6e3d55f, type: 2}
-  hotbarMenu: {fileID: 0}
+  inventoryMenus:
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!143 &-8844758293357546272
 CharacterController:
   m_ObjectHideFlags: 0
@@ -249,6 +246,18 @@ MonoBehaviour:
   m_DefaultActionMap: PlayerControls
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 5061452209031720663}
+--- !u!114 &525765693
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5061452209857812239}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fafc85129fbfcb4da36d31e50c958b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &551737087745747229
 PrefabInstance:
   m_ObjectHideFlags: 0

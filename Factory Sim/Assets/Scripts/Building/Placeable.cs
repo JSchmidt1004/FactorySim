@@ -17,6 +17,7 @@ public class Placeable : MonoBehaviour
     public float maxPlacementAngle = 0.75f;
     public bool invertedPlacementAngle;
     public List<SnapPoint> snapPoints = new List<SnapPoint>();
+    public float radius = 2f;
 
     public GameObject previewModel;
 

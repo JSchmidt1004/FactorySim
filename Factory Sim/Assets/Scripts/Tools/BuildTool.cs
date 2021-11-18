@@ -7,6 +7,8 @@ public class BuildTool : Tool
 {
     public List<Recipe> placeableRecipes = new List<Recipe>();
 
+    public bool requireResources = true;
+
     Camera playerCamera;
     Placement placement;
 
@@ -33,7 +35,7 @@ public class BuildTool : Tool
         {
             int current = index % placeableRecipes.Count;
             currentRecipe = placeableRecipes[current];
-            GameObject chosen = currentRecipe.outcome;
+            GameObject chosen = currentRecipe.outcome.prefab;
             placement.SelectChosen(chosen.GetComponent<Placeable>());
             index++;
         }
@@ -81,7 +83,7 @@ public class BuildTool : Tool
                 }
                 else if (validPlacement)
                 {
-                    placement.SelectChosen(currentRecipe.outcome.GetComponent<Placeable>());
+                    placement.SelectChosen(currentRecipe.outcome.prefab.GetComponent<Placeable>());
                 }
             }
             else
@@ -101,9 +103,12 @@ public class BuildTool : Tool
 
     bool HasRecipeResources()
     {
-        bool resourcesAvailable = true;
+        if (requireResources)
+        {
+            return Crafting.HasIngredients(currentRecipe, PlayerInfo.backpack?.inventoryMenus[0].linkedInventory);
+        }
 
-        return resourcesAvailable;
+        return true;
     }
 
 }

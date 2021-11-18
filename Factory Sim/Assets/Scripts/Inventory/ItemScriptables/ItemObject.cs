@@ -17,6 +17,8 @@ public abstract class ItemObject : ScriptableObject
     public ItemType type = ItemType.Default;
     public int maxStack = 100;
 
+    public string itemName;
+
     [TextArea(15, 20)]
     public string description;
 }

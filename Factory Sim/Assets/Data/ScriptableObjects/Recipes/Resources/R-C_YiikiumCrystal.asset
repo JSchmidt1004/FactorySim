@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f66f205be66fb444bb68843195b45c39, type: 3}
+  m_Name: R-C_YiikiumCrystal
+  m_EditorClassIdentifier: 
+  RecipeName: Yiikium Crystal
+  craftTime: 1
+  outcome: {fileID: 11400000, guid: 1a6dc5465dc45754ea98773b964ddb77, type: 2}
+  expectedResources:
+  - name: Yiikium Essence
+    resourceObject:
+      item: {fileID: 11400000, guid: b4dd9db38cf744a4ea317f4854f5f554, type: 2}
+      amount: 0
+    count: 5

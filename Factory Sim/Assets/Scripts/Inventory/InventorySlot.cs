@@ -11,8 +11,7 @@ public class InventorySlot
 
     public InventorySlot()
     {
-        item = null;
-        amount = 0;
+        EmptySlot();
     }
 
     public InventorySlot(ItemObject item, int amount)
@@ -21,14 +20,38 @@ public class InventorySlot
         this.amount = amount;
     }
 
-    public void AddAmount(int value)
+    public int AddAmount(int value)
     {
-        amount += value;
+        int availableSpace = item.maxStack - amount;
+        int leftovers = value - availableSpace;
+
+        if (amount + value > item.maxStack) amount = item.maxStack;
+        else amount += value;
+
+        //amount += value;
+
+        return leftovers;
+    }
+
+    public int SubtractAmount(int value)
+    {
+        int leftovers = -(amount - value);
+
+        if (amount - value < 0) EmptySlot();
+        else amount -= value;
+
+        return leftovers;
     }
 
     public void UpdateSlot(ItemObject item, int amount)
     {
         this.item = item;
         this.amount = amount;
+    }
+
+    public void EmptySlot()
+    {
+        item = null;
+        amount = 0;
     }
 }

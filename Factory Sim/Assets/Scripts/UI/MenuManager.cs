@@ -103,7 +103,7 @@ public class MenuManager : MonoBehaviour
     public void OnOpenRadialMenu()
     {
         MenuScreen menuScreen = FindMenu("RadialMenu");
-
+        
         if (!menuScreen.openMenu)
         {
             OpenMenu(menuScreen);

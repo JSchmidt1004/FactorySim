@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f66f205be66fb444bb68843195b45c39, type: 3}
+  m_Name: R-C_FlexilisCrystal
+  m_EditorClassIdentifier: 
+  RecipeName: Flexilis Crystal
+  craftTime: 1
+  outcome: {fileID: 11400000, guid: 6620a95fa6c954c40bc8a0e3ea02f38f, type: 2}
+  expectedResources:
+  - name: Flexilis Essence
+    resourceObject:
+      item: {fileID: 11400000, guid: f36495fc62c737e4198d177d5e76e73f, type: 2}
+      amount: 0
+    count: 5

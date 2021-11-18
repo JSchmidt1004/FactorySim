@@ -147,12 +147,12 @@ public class InventoryMenu : MonoBehaviour
     {
         if (mouseItem.hoverObject)
         {
-
             linkedInventory.MoveItem(mouseItem.item, mouseItem.hoverItem);
         }
         else
         {
-
+            Vector3 placementPosition = PlayerInfo.playerTransform.position + Vector3.one;
+            linkedInventory.DropItem(mouseItem.item, mouseItem.item.amount, placementPosition);
         }
 
         Destroy(mouseItem.currentObject);
@@ -177,15 +177,3 @@ public class MouseItem
     public GameObject hoverObject;
     public InventorySlot hoverItem;
 }
-
-/*
-
-Ok, so rant time. If my dictionary holds the index of the slot instead of the actual slot, 
-I could pass that back without worrying about deleting the slots to resize the ui.
-So I shouldn't store the Slots in the dictionary at all. I should only worry about their index, which can still be tracked via the list
-And when I move items, it moves them within the dictionary. But how do I make new Items add properly to the dictionary. 
-I could do a double for loop if need be and run through each inventory item and check that its in the dictionary at all
-or the dictionary holds the items in the inventory and their index is the value.
-Then I could check what spot I click on and move it to. Idk. That seems wrong.
-
-*/

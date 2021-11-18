@@ -146,7 +146,8 @@ MonoBehaviour:
   maxPlacementAngle: 0.8
   invertedPlacementAngle: 0
   snapPoints: []
-  previewModel: {fileID: 0}
+  radius: 2
+  previewModel: {fileID: 7037085096491142151}
 --- !u!114 &7037085095612230104
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -163,13 +164,7 @@ MonoBehaviour:
   itemRange: 0.25
   lerpMovement: 0
   yBounce: 1
-  nextLinks:
-  - previous: {fileID: 7037085095612230104}
-    next: {fileID: 0}
-    speed: 2
-    bounceHeight: 1
-    bounceSpeed: 2
-    items: []
+  nextLinks: []
 --- !u!135 &7037085095612230105
 SphereCollider:
   m_ObjectHideFlags: 0

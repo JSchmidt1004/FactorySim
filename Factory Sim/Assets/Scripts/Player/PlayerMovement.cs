@@ -14,7 +14,6 @@ public class PlayerMovement : MonoBehaviour
     public Camera playerCamera;
 
     CharacterController characterController;
-    Rigidbody rb;
     float yRotation;
     float xRotation;
     bool sprinting = false;
@@ -22,7 +21,6 @@ public class PlayerMovement : MonoBehaviour
 
     void Start()
     {
-        rb = GetComponent<Rigidbody>();
         characterController = GetComponent<CharacterController>();
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;

@@ -1,6 +1,6 @@
 Using pre-set license
 Built from '2020.3/release' branch; Version is '2020.3.12f1 (b3b2c6512326) revision 11776710'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10 Pro; OS build 19043.1288; Version 2009; 64bit' Language: 'en' Physical Memory: 32198 MB
+OS: 'Windows 10 Pro; OS build 19043.1348; Version 2009; 64bit' Language: 'en' Physical Memory: 32198 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
  COMMAND LINE ARGUMENTS:
@@ -15,11 +15,11 @@ C:/Users/JSchmidt/Desktop/Neumont/Quarter 9 Capstone/Capstone/FactorySim/Factory
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-60631
+54165
 Successfully changed project path to: C:/Users/JSchmidt/Desktop/Neumont/Quarter 9 Capstone/Capstone/FactorySim/FactorySim/Factory Sim
 C:/Users/JSchmidt/Desktop/Neumont/Quarter 9 Capstone/Capstone/FactorySim/FactorySim/Factory Sim
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 30.61 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 96.41 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.12f1 (b3b2c6512326)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.12f1/Editor/Data/Resources/UnitySubsystems
@@ -35,40 +35,40 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.12f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.12f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.12f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56376
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56616
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.12f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.12f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001867 seconds.
+Registered in 0.004251 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 28.23 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 53.45 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.940 seconds
+- Completed reload, in  6.655 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.003446 seconds.
+Registered in 0.008164 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 28.46 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 40.82 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.971 seconds
+- Completed reload, in  1.517 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
-Refreshing native plugins compatible for Editor in 0.38 ms, found 2 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 0.61 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1729 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 79.9 MB.
-System memory in use after: 79.9 MB.
+Unloading 1735 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 80.1 MB.
+System memory in use after: 80.1 MB.
 
-Unloading 23 unused Assets to reduce memory usage. Loaded Objects now: 2168.
-Total: 1.876400 ms (FindLiveObjects: 0.126100 ms CreateObjectMapping: 0.044800 ms MarkObjects: 1.642100 ms  DeleteObjects: 0.062600 ms)
+Unloading 23 unused Assets to reduce memory usage. Loaded Objects now: 2175.
+Total: 2.542200 ms (FindLiveObjects: 0.221900 ms CreateObjectMapping: 0.062700 ms MarkObjects: 2.181600 ms  DeleteObjects: 0.074900 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -82,175 +82,31 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/Data/ScriptableObjects/Items/Yiikium 1.asset
-  artifactKey: Guid(6620a95fa6c954c40bc8a0e3ea02f38f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Data/ScriptableObjects/Items/Yiikium 1.asset using Guid(6620a95fa6c954c40bc8a0e3ea02f38f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d37bb180cd4419a24267923df1529d2') in 0.026381 seconds 
-  Import took 0.028595 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.783025 seconds.
-  path: Assets/Data/ScriptableObjects/Items/Flexilis.asset
-  artifactKey: Guid(6620a95fa6c954c40bc8a0e3ea02f38f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Data/ScriptableObjects/Items/Flexilis.asset using Guid(6620a95fa6c954c40bc8a0e3ea02f38f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '021dca031b304bdeb3a49202c7da2fbb') in 0.008668 seconds 
-  Import took 0.011610 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2401.686333 seconds.
-  path: Assets/External/Sprites/RecoloredStones
-  artifactKey: Guid(b42f5602bb4660b4dbbd4b42f8168de9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/External/Sprites/RecoloredStones using Guid(b42f5602bb4660b4dbbd4b42f8168de9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bddcdd21f7f1cb8e72e888b6152a3af4') in 0.010080 seconds 
-  Import took 0.012951 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 12.286102 seconds.
-  path: Assets/External/Sprites/RecoloredStones/BrightPurple.png
-  artifactKey: Guid(cec7dc22d2000f04f97c3d06225883ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/External/Sprites/RecoloredStones/BrightPurple.png using Guid(cec7dc22d2000f04f97c3d06225883ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1c1035cd3f702063eee41086a93e0d2') in 0.044151 seconds 
-  Import took 0.046477 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.012611 seconds.
-  path: Assets/External/Sprites/RecoloredStones/BrightPurple.png
-  artifactKey: Guid(cec7dc22d2000f04f97c3d06225883ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/External/Sprites/RecoloredStones/BrightPurple.png using Guid(cec7dc22d2000f04f97c3d06225883ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1c1035cd3f702063eee41086a93e0d2') in 0.014267 seconds 
-  Import took 0.016862 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.702115 seconds.
-  path: Assets/External/Sprites/RecoloredStones/Grey.png
-  artifactKey: Guid(89be9bb8131c026479ad0091383eef89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/External/Sprites/RecoloredStones/Grey.png using Guid(89be9bb8131c026479ad0091383eef89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b217bc49b76b93eed90b09001663bc2e') in 0.015640 seconds 
-  Import took 0.018097 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.448617 seconds.
-  path: Assets/External/Sprites/RecoloredStones/Grey.png
-  artifactKey: Guid(89be9bb8131c026479ad0091383eef89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/External/Sprites/RecoloredStones/Grey.png using Guid(89be9bb8131c026479ad0091383eef89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '486c54120fcb4a7b760027d8be6566f6') in 0.063529 seconds 
-  Import took 0.066008 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 8.601861 seconds.
-  path: Assets/External/Sprites/RecoloredStones/BrightPurple.png
-  artifactKey: Guid(cec7dc22d2000f04f97c3d06225883ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/External/Sprites/RecoloredStones/BrightPurple.png using Guid(cec7dc22d2000f04f97c3d06225883ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '025f1b37c6f6fd619456051c34a8482c') in 0.016443 seconds 
-  Import took 0.019787 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000283 seconds.
-  path: Assets/External/Sprites/RecoloredStones/BrightRed.png
-  artifactKey: Guid(3233fc46fda191641a6bf47f67c1ab75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/External/Sprites/RecoloredStones/BrightRed.png using Guid(3233fc46fda191641a6bf47f67c1ab75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35827bcfd9e5a8ef5608759789f46113') in 0.015765 seconds 
-  Import took 0.018403 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 18.679667 seconds.
-  path: Assets/External/Sprites/RecoloredStones/PinkRed.png
-  artifactKey: Guid(990878d4ab6cf9644a2ea99ca03399bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/External/Sprites/RecoloredStones/PinkRed.png using Guid(990878d4ab6cf9644a2ea99ca03399bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b3c77a1538a1385d2434b790d2f3d665') in 0.021389 seconds 
-  Import took 0.024176 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1005.510724 seconds.
-  path: Assets/External/Sprites/RecoloredStones/White 1.png
-  artifactKey: Guid(4774af0ce83676c4393dd949751782d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/External/Sprites/RecoloredStones/White 1.png using Guid(4774af0ce83676c4393dd949751782d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67ce05f3dfa6602815aeef1a2f251584') in 0.015070 seconds 
-  Import took 0.018276 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.002651 seconds.
-  path: Assets/External/Sprites/RecoloredStones/White 1.png
-  artifactKey: Guid(4774af0ce83676c4393dd949751782d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/External/Sprites/RecoloredStones/White 1.png using Guid(4774af0ce83676c4393dd949751782d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67ce05f3dfa6602815aeef1a2f251584') in 0.014710 seconds 
-  Import took 0.017233 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.478279 seconds.
-  path: Assets/External/Sprites/RecoloredStones/ShinyBlue 1.png
-  artifactKey: Guid(da2687edd9212c04db1998acc22e90b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/External/Sprites/RecoloredStones/ShinyBlue 1.png using Guid(da2687edd9212c04db1998acc22e90b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0746f3c9c6ad1c83356784b9512e9970') in 0.013218 seconds 
-  Import took 0.017051 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.936758 seconds.
-  path: Assets/External/Sprites/RecoloredStones/BrightBlue 1.png
-  artifactKey: Guid(7865beb36211c7244a30f438c2aa6c64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/External/Sprites/RecoloredStones/BrightBlue 1.png using Guid(7865beb36211c7244a30f438c2aa6c64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ee92ddeff8edc86052348a1171d4217') in 0.014927 seconds 
-  Import took 0.017283 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.528864 seconds.
-  path: Assets/External/Sprites/RecoloredStones/BlueBlack 1.png
-  artifactKey: Guid(b5b7e066236687141a50d4222d98e49c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/External/Sprites/RecoloredStones/BlueBlack 1.png using Guid(b5b7e066236687141a50d4222d98e49c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1c9c6890c03f66fcd4a2ca52e9b5d34') in 0.017348 seconds 
-  Import took 0.020268 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.142886 seconds.
-  path: Assets/External/Sprites/RecoloredStones/BlueBlack.png
-  artifactKey: Guid(4ac7e46bb27b75746966af2f1784f36c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/External/Sprites/RecoloredStones/BlueBlack.png using Guid(4ac7e46bb27b75746966af2f1784f36c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25ca40236514c9e6d35693f9e1195bf2') in 0.014438 seconds 
-  Import took 0.018194 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 12.250299 seconds.
-  path: Assets/External/Sprites/RecoloredStones/BlueBlack.png
-  artifactKey: Guid(4ac7e46bb27b75746966af2f1784f36c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/External/Sprites/RecoloredStones/BlueBlack.png using Guid(4ac7e46bb27b75746966af2f1784f36c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a2d414d144e3df94ae200644f30997d') in 0.017179 seconds 
-  Import took 0.020804 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 18.973802 seconds.
-  path: Assets/External/Sprites/RecoloredStones/BrightBlue.png
-  artifactKey: Guid(693091afdb85b8f468cb4a5f5c926ee7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/External/Sprites/RecoloredStones/BrightBlue.png using Guid(693091afdb85b8f468cb4a5f5c926ee7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14171657d9bc30215c3e5acb411d9ff3') in 0.017356 seconds 
-  Import took 0.020062 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.409084 seconds.
-  path: Assets/External/Sprites/RecoloredStones/Brown.png
-  artifactKey: Guid(c818183fbd88ae443a1f868b4d16af71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/External/Sprites/RecoloredStones/Brown.png using Guid(c818183fbd88ae443a1f868b4d16af71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3963b0840941645b6c90e902aca7ac94') in 0.019307 seconds 
-  Import took 0.022836 seconds .
+  path: Assets/Data/ScriptableObjects/Inventories/PlayerInventory.asset
+  artifactKey: Guid(7da83c65ee8a7dc438bb97f910ff5f65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/ScriptableObjects/Inventories/PlayerInventory.asset using Guid(7da83c65ee8a7dc438bb97f910ff5f65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93d808ac4f291f0fb7b2ffac2120977a') in 0.039595 seconds 
+  Import took 0.042648 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.124975 seconds.
+Registered in 0.014876 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.39 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.77 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.138 seconds
+- Completed reload, in  2.848 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.40 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 1.32 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1711 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 81.8 MB.
-System memory in use after: 81.8 MB.
+Unloading 1717 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 78.9 MB.
+System memory in use after: 79.0 MB.
 
-Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2177.
-Total: 2.698000 ms (FindLiveObjects: 0.229800 ms CreateObjectMapping: 0.084400 ms MarkObjects: 2.309900 ms  DeleteObjects: 0.072800 ms)
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2178.
+Total: 7.403500 ms (FindLiveObjects: 0.487700 ms CreateObjectMapping: 0.227100 ms MarkObjects: 6.505000 ms  DeleteObjects: 0.180000 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -265,23 +121,23 @@ AssetImportParameters requested are different than current active one (requested
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.004609 seconds.
+Registered in 0.011897 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.39 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.77 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.030 seconds
+- Completed reload, in  3.282 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.40 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 1.27 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1711 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 81.8 MB.
-System memory in use after: 81.9 MB.
+Unloading 1717 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 78.9 MB.
+System memory in use after: 79.0 MB.
 
-Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2180.
-Total: 1.794200 ms (FindLiveObjects: 0.124600 ms CreateObjectMapping: 0.043600 ms MarkObjects: 1.580100 ms  DeleteObjects: 0.045000 ms)
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2181.
+Total: 8.610300 ms (FindLiveObjects: 0.729600 ms CreateObjectMapping: 0.314800 ms MarkObjects: 7.386100 ms  DeleteObjects: 0.176000 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -295,10 +151,664 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 2008.723267 seconds.
-  path: Assets/External/Sprites/RecoloredStones/ShinyBlue.png
-  artifactKey: Guid(cf1fe4da73838dd4f9a2d594e87b83fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/External/Sprites/RecoloredStones/ShinyBlue.png using Guid(cf1fe4da73838dd4f9a2d594e87b83fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '655f02bbc18d7376851a986360015062') in 0.057287 seconds 
-  Import took 0.060975 seconds .
+  Time since last request: 335.916697 seconds.
+  path: Assets/Data/ScriptableObjects/Recipes/Resources/SolariteCrystal 2.asset
+  artifactKey: Guid(685e3d34a6dc07749954a2bde6532cd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/ScriptableObjects/Recipes/Resources/SolariteCrystal 2.asset using Guid(685e3d34a6dc07749954a2bde6532cd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46dd10d9cc655f345a165ae6b4d05fea') in 0.092478 seconds 
+  Import took 0.104613 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.273691 seconds.
+  path: Assets/Data/ScriptableObjects/Recipes/Resources/SolariteCrystal 3.asset
+  artifactKey: Guid(6aa2ce8b536fcfa4fbb1e063ac54cfd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/ScriptableObjects/Recipes/Resources/SolariteCrystal 3.asset using Guid(6aa2ce8b536fcfa4fbb1e063ac54cfd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5f0758402e367afd134e3df1e66cffb') in 0.033831 seconds 
+  Import took 0.043621 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.982649 seconds.
+  path: Assets/Data/ScriptableObjects/Recipes/Resources/SolariteCrystal 1.asset
+  artifactKey: Guid(de15d9f891f1fb140be93d88e86eed45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/ScriptableObjects/Recipes/Resources/SolariteCrystal 1.asset using Guid(de15d9f891f1fb140be93d88e86eed45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64192c7cee2c1f1e5cd4040d8c9ee19f') in 0.016540 seconds 
+  Import took 0.020989 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.759281 seconds.
+  path: Assets/Data/ScriptableObjects/Recipes/Resources/YiikiumCrystal.asset
+  artifactKey: Guid(de15d9f891f1fb140be93d88e86eed45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/ScriptableObjects/Recipes/Resources/YiikiumCrystal.asset using Guid(de15d9f891f1fb140be93d88e86eed45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd92f0e8b6935db8042d498c0d5d35d91') in 0.022180 seconds 
+  Import took 0.029177 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.188153 seconds.
+  path: Assets/Data/ScriptableObjects/Recipes/Resources/FlexilisCrystal.asset
+  artifactKey: Guid(6aa2ce8b536fcfa4fbb1e063ac54cfd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/ScriptableObjects/Recipes/Resources/FlexilisCrystal.asset using Guid(6aa2ce8b536fcfa4fbb1e063ac54cfd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ebe3f537ff4fe3a3e8f0a3a519800c43') in 0.040245 seconds 
+  Import took 0.051679 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.542032 seconds.
+  path: Assets/Data/ScriptableObjects/Recipes/Resources/SolariteCrystal 2.asset
+  artifactKey: Guid(685e3d34a6dc07749954a2bde6532cd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/ScriptableObjects/Recipes/Resources/SolariteCrystal 2.asset using Guid(685e3d34a6dc07749954a2bde6532cd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ad81e10e80adde4fcb7170965311425') in 0.008974 seconds 
+  Import took 0.013822 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 28.232311 seconds.
+  path: Assets/Data/ScriptableObjects/Recipes/Resources/AetheriumCrystal.asset
+  artifactKey: Guid(685e3d34a6dc07749954a2bde6532cd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/ScriptableObjects/Recipes/Resources/AetheriumCrystal.asset using Guid(685e3d34a6dc07749954a2bde6532cd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c865e3ef9f63ef99e9477fd5ae6a33e') in 0.020337 seconds 
+  Import took 0.027898 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.447458 seconds.
+  path: Assets/Data/ScriptableObjects/Recipes/Resources/R_AetheriumCrystal.asset
+  artifactKey: Guid(685e3d34a6dc07749954a2bde6532cd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/ScriptableObjects/Recipes/Resources/R_AetheriumCrystal.asset using Guid(685e3d34a6dc07749954a2bde6532cd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e30c7e41397c819cffabea497fee96b') in 0.012854 seconds 
+  Import took 0.017308 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.930011 seconds.
+  path: Assets/Data/ScriptableObjects/Recipes/Resources/R_FlexilisCrystal.asset
+  artifactKey: Guid(6aa2ce8b536fcfa4fbb1e063ac54cfd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/ScriptableObjects/Recipes/Resources/R_FlexilisCrystal.asset using Guid(6aa2ce8b536fcfa4fbb1e063ac54cfd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13dff037fbe6611e5d8d235c70a94471') in 0.029396 seconds 
+  Import took 0.039694 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.775902 seconds.
+  path: Assets/Data/ScriptableObjects/Recipes/Resources/R_SolariteCrystal.asset
+  artifactKey: Guid(bf85dfb9c399ed7429280a9dc8aa3941) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/ScriptableObjects/Recipes/Resources/R_SolariteCrystal.asset using Guid(bf85dfb9c399ed7429280a9dc8aa3941) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f2ac34636f5f1be10456424355e270b') in 0.016432 seconds 
+  Import took 0.022056 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.297436 seconds.
+  path: Assets/Data/ScriptableObjects/Recipes/Resources/R_YiikiumCrystal.asset
+  artifactKey: Guid(de15d9f891f1fb140be93d88e86eed45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/ScriptableObjects/Recipes/Resources/R_YiikiumCrystal.asset using Guid(de15d9f891f1fb140be93d88e86eed45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ef61072b11697faf95974d6a2405d32') in 0.031709 seconds 
+  Import took 0.042516 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 90.141063 seconds.
+  path: Assets/Data/ScriptableObjects/Recipes/Resources/R_FlexilisCrystal.asset
+  artifactKey: Guid(6aa2ce8b536fcfa4fbb1e063ac54cfd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/ScriptableObjects/Recipes/Resources/R_FlexilisCrystal.asset using Guid(6aa2ce8b536fcfa4fbb1e063ac54cfd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd27b3cdbd5d7cc37e103c5b8dd6b3cb5') in 0.021301 seconds 
+  Import took 0.033254 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.080738 seconds.
+  path: Assets/Data/ScriptableObjects/Recipes/Resources/R_FlexilisCrystal.asset
+  artifactKey: Guid(6aa2ce8b536fcfa4fbb1e063ac54cfd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/ScriptableObjects/Recipes/Resources/R_FlexilisCrystal.asset using Guid(6aa2ce8b536fcfa4fbb1e063ac54cfd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd27b3cdbd5d7cc37e103c5b8dd6b3cb5') in 0.005252 seconds 
+  Import took 0.008466 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 24.657284 seconds.
+  path: Assets/Data/ScriptableObjects/Recipes/Resources/R_AetheriumCrystal.asset
+  artifactKey: Guid(685e3d34a6dc07749954a2bde6532cd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/ScriptableObjects/Recipes/Resources/R_AetheriumCrystal.asset using Guid(685e3d34a6dc07749954a2bde6532cd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad8b0be9cf3301a244fe48e95d761fa1') in 0.017251 seconds 
+  Import took 0.029489 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.082284 seconds.
+  path: Assets/Data/ScriptableObjects/Recipes/Resources/R_AetheriumCrystal.asset
+  artifactKey: Guid(685e3d34a6dc07749954a2bde6532cd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/ScriptableObjects/Recipes/Resources/R_AetheriumCrystal.asset using Guid(685e3d34a6dc07749954a2bde6532cd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad8b0be9cf3301a244fe48e95d761fa1') in 0.010760 seconds 
+  Import took 0.017281 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.928642 seconds.
+  path: Assets/Data/ScriptableObjects/Recipes/Resources/R_YiikiumCrystal.asset
+  artifactKey: Guid(de15d9f891f1fb140be93d88e86eed45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/ScriptableObjects/Recipes/Resources/R_YiikiumCrystal.asset using Guid(de15d9f891f1fb140be93d88e86eed45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06cb746cd9c1c25e8590b62819ea7022') in 0.005183 seconds 
+  Import took 0.008502 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 38.772968 seconds.
+  path: Assets/Scripts/Inventory/InventoryObject.cs
+  artifactKey: Guid(170e8bf26684a5049892f3c4074e25a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Inventory/InventoryObject.cs using Guid(170e8bf26684a5049892f3c4074e25a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0e84050e8ca96d9b18b593ba15d5a18') in 0.025775 seconds 
+  Import took 0.032047 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.044446 seconds.
+  path: Assets/Scripts/Inventory/InventoryObject.cs
+  artifactKey: Guid(170e8bf26684a5049892f3c4074e25a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Inventory/InventoryObject.cs using Guid(170e8bf26684a5049892f3c4074e25a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0e84050e8ca96d9b18b593ba15d5a18') in 0.003161 seconds 
+  Import took 0.006413 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005887 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.43 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.153 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.40 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1717 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 78.9 MB.
+System memory in use after: 79.0 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2184.
+Total: 4.772300 ms (FindLiveObjects: 0.365900 ms CreateObjectMapping: 0.131600 ms MarkObjects: 4.162700 ms  DeleteObjects: 0.110000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 103.317493 seconds.
+  path: Assets/Scripts/Crafting/Recipe.cs
+  artifactKey: Guid(f66f205be66fb444bb68843195b45c39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Crafting/Recipe.cs using Guid(f66f205be66fb444bb68843195b45c39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c3539be32842ecdf9b319a59d9bc65c') in 0.020531 seconds 
+  Import took 0.027739 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005668 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.19 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.717 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.96 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1717 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 79.0 MB.
+System memory in use after: 79.0 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2187.
+Total: 4.651500 ms (FindLiveObjects: 0.285900 ms CreateObjectMapping: 0.129300 ms MarkObjects: 4.124800 ms  DeleteObjects: 0.109000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 28.531537 seconds.
+  path: Assets/Scripts/Crafting/Recipe.cs
+  artifactKey: Guid(f66f205be66fb444bb68843195b45c39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Crafting/Recipe.cs using Guid(f66f205be66fb444bb68843195b45c39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e753a5908ef96f716a9ba1dcbeb76481') in 0.010297 seconds 
+  Import took 0.016437 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.649031 seconds.
+  path: Assets/Data/ScriptableObjects/Items/Crystals/AetheriumCrystal.asset
+  artifactKey: Guid(edeb5b5c845609143a0e313649deb3c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/ScriptableObjects/Items/Crystals/AetheriumCrystal.asset using Guid(edeb5b5c845609143a0e313649deb3c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '871f7086fe2a2d4be3fb4430b2a36128') in 0.021657 seconds 
+  Import took 0.025299 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.882166 seconds.
+  path: Assets/Data/ScriptableObjects/Items/Crystals/FlexilisCrystal.asset
+  artifactKey: Guid(6620a95fa6c954c40bc8a0e3ea02f38f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/ScriptableObjects/Items/Crystals/FlexilisCrystal.asset using Guid(6620a95fa6c954c40bc8a0e3ea02f38f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8e4194b3c48bee7d79415c45cd68e8f') in 0.015448 seconds 
+  Import took 0.026811 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.666460 seconds.
+  path: Assets/Data/ScriptableObjects/Items/Crystals/SolariteCrystal.asset
+  artifactKey: Guid(a15c2920df152d544899881180cb5e57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/ScriptableObjects/Items/Crystals/SolariteCrystal.asset using Guid(a15c2920df152d544899881180cb5e57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4bbda81a691c15012edc281c6ebafe9') in 0.029077 seconds 
+  Import took 0.040623 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.649331 seconds.
+  path: Assets/Data/ScriptableObjects/Items/Crystals/YiikiumCrystal.asset
+  artifactKey: Guid(1a6dc5465dc45754ea98773b964ddb77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/ScriptableObjects/Items/Crystals/YiikiumCrystal.asset using Guid(1a6dc5465dc45754ea98773b964ddb77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b15c1fa207bd980b674e95749c7c541') in 0.015599 seconds 
+  Import took 0.028700 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.862260 seconds.
+  path: Assets/Data/ScriptableObjects/Items/FlowerEssences/AetheriumEssence.asset
+  artifactKey: Guid(389f0b6c4520b0248b15cc9760678a2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/ScriptableObjects/Items/FlowerEssences/AetheriumEssence.asset using Guid(389f0b6c4520b0248b15cc9760678a2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01649646a443b24b7843567cf097ecf4') in 0.009421 seconds 
+  Import took 0.013331 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.278032 seconds.
+  path: Assets/Data/ScriptableObjects/Items/FlowerEssences/FlexilisEssence.asset
+  artifactKey: Guid(f36495fc62c737e4198d177d5e76e73f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/ScriptableObjects/Items/FlowerEssences/FlexilisEssence.asset using Guid(f36495fc62c737e4198d177d5e76e73f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '540182608a9a14c1490aaf97ae9d1fe3') in 0.008758 seconds 
+  Import took 0.013241 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.885858 seconds.
+  path: Assets/Data/ScriptableObjects/Items/FlowerEssences/SolariteEssence.asset
+  artifactKey: Guid(b64aad76801f5894e919b1a5a4285fca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/ScriptableObjects/Items/FlowerEssences/SolariteEssence.asset using Guid(b64aad76801f5894e919b1a5a4285fca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8e6f0ab580fcbb9c03fd30aa801f8f7') in 0.029705 seconds 
+  Import took 0.042819 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.621202 seconds.
+  path: Assets/Data/ScriptableObjects/Items/FlowerEssences/YiikiumEssence.asset
+  artifactKey: Guid(b4dd9db38cf744a4ea317f4854f5f554) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/ScriptableObjects/Items/FlowerEssences/YiikiumEssence.asset using Guid(b4dd9db38cf744a4ea317f4854f5f554) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d6f25e2d522a84c6f1ee471c5b20a37') in 0.026926 seconds 
+  Import took 0.038481 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.661564 seconds.
+  path: Assets/Data/ScriptableObjects/Items/Hammer.asset
+  artifactKey: Guid(a14217cdf9cb99547b5fc79e4e1f976f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/ScriptableObjects/Items/Hammer.asset using Guid(a14217cdf9cb99547b5fc79e4e1f976f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e59d645383aafb620c170e0cfeddcb0') in 0.098224 seconds 
+  Import took 0.108570 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 22.508496 seconds.
+  path: Assets/Data/ScriptableObjects/Items/Placeables/CondenserItem.asset
+  artifactKey: Guid(6cc2fde6aab5ea046b183b5a264d91fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/ScriptableObjects/Items/Placeables/CondenserItem.asset using Guid(6cc2fde6aab5ea046b183b5a264d91fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '025fd1a9db543a0bb4509c47b59d3f8f') in 0.042584 seconds 
+  Import took 0.053104 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.351972 seconds.
+  path: Assets/Data/ScriptableObjects/Items/Placeables/CrusherItem.asset
+  artifactKey: Guid(cc9e7cfe6e42f4d47b34ae722e865cdb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/ScriptableObjects/Items/Placeables/CrusherItem.asset using Guid(cc9e7cfe6e42f4d47b34ae722e865cdb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02e5624e096c3ddd9ed6f0db9512b432') in 0.032649 seconds 
+  Import took 0.045216 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.100784 seconds.
+  path: Assets/Data/ScriptableObjects/Items/Placeables/PylonItem.asset
+  artifactKey: Guid(651fad8c954b08b40bd8e6fa371de114) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/ScriptableObjects/Items/Placeables/PylonItem.asset using Guid(651fad8c954b08b40bd8e6fa371de114) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74656fe815b173b4ecab026ffe9e7ac6') in 0.028598 seconds 
+  Import took 0.038971 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.389161 seconds.
+  path: Assets/Data/ScriptableObjects/Items/Placeables/CrusherItem.asset
+  artifactKey: Guid(cc9e7cfe6e42f4d47b34ae722e865cdb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/ScriptableObjects/Items/Placeables/CrusherItem.asset using Guid(cc9e7cfe6e42f4d47b34ae722e865cdb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '885f81927484882d69323d28d4b41162') in 0.019461 seconds 
+  Import took 0.032187 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.080243 seconds.
+  path: Assets/Data/ScriptableObjects/Items/Placeables/B_Pylon.asset
+  artifactKey: Guid(651fad8c954b08b40bd8e6fa371de114) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/ScriptableObjects/Items/Placeables/B_Pylon.asset using Guid(651fad8c954b08b40bd8e6fa371de114) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de601ee2cb78c449758c252ea9e881a8') in 0.015925 seconds 
+  Import took 0.021456 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.213195 seconds.
+  path: Assets/Data/ScriptableObjects/Items/Placeables/B_Condenser.asset
+  artifactKey: Guid(6cc2fde6aab5ea046b183b5a264d91fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/ScriptableObjects/Items/Placeables/B_Condenser.asset using Guid(6cc2fde6aab5ea046b183b5a264d91fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b22d40061799e702d46fe0b3fd28c8a1') in 0.022139 seconds 
+  Import took 0.030259 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.941701 seconds.
+  path: Assets/Data/ScriptableObjects/Items/Placeables/B_Crusher.asset
+  artifactKey: Guid(cc9e7cfe6e42f4d47b34ae722e865cdb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/ScriptableObjects/Items/Placeables/B_Crusher.asset using Guid(cc9e7cfe6e42f4d47b34ae722e865cdb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63f5c5e822142aee029e6a2757823f02') in 0.020984 seconds 
+  Import took 0.028154 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 18.726906 seconds.
+  path: Assets/Data/ScriptableObjects/Items/FlowerEssences/E_YiikiumEssence.asset
+  artifactKey: Guid(b4dd9db38cf744a4ea317f4854f5f554) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/ScriptableObjects/Items/FlowerEssences/E_YiikiumEssence.asset using Guid(b4dd9db38cf744a4ea317f4854f5f554) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02dade8f86923a77dcbf3379bc972d06') in 0.010751 seconds 
+  Import took 0.014961 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.809209 seconds.
+  path: Assets/Data/ScriptableObjects/Items/FlowerEssences/E_AetheriumEssence.asset
+  artifactKey: Guid(389f0b6c4520b0248b15cc9760678a2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/ScriptableObjects/Items/FlowerEssences/E_AetheriumEssence.asset using Guid(389f0b6c4520b0248b15cc9760678a2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3dcb56aca92ccd2e95e18036e5a15026') in 0.010900 seconds 
+  Import took 0.015480 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.487420 seconds.
+  path: Assets/Data/ScriptableObjects/Items/FlowerEssences/E_FlexilisEssence.asset
+  artifactKey: Guid(f36495fc62c737e4198d177d5e76e73f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/ScriptableObjects/Items/FlowerEssences/E_FlexilisEssence.asset using Guid(f36495fc62c737e4198d177d5e76e73f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e90f43c07a5605ea3358cffd7cb35e9') in 0.010519 seconds 
+  Import took 0.015150 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.318820 seconds.
+  path: Assets/Data/ScriptableObjects/Items/FlowerEssences/E_Solarite.asset
+  artifactKey: Guid(b64aad76801f5894e919b1a5a4285fca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/ScriptableObjects/Items/FlowerEssences/E_Solarite.asset using Guid(b64aad76801f5894e919b1a5a4285fca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '695af53c64788d1f4b39eb9cbaa5aace') in 0.012866 seconds 
+  Import took 0.017585 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.061931 seconds.
+  path: Assets/Data/ScriptableObjects/Items/FlowerEssences/E_Yiikium.asset
+  artifactKey: Guid(b4dd9db38cf744a4ea317f4854f5f554) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/ScriptableObjects/Items/FlowerEssences/E_Yiikium.asset using Guid(b4dd9db38cf744a4ea317f4854f5f554) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '011bb7dfc558db011eb1f9e62b59df28') in 0.011893 seconds 
+  Import took 0.016155 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.490829 seconds.
+  path: Assets/Data/ScriptableObjects/Items/FlowerEssences/E_Flexilis.asset
+  artifactKey: Guid(f36495fc62c737e4198d177d5e76e73f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/ScriptableObjects/Items/FlowerEssences/E_Flexilis.asset using Guid(f36495fc62c737e4198d177d5e76e73f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '767851eacb4a016c3a570ac37cb45986') in 0.008559 seconds 
+  Import took 0.012260 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.929909 seconds.
+  path: Assets/Data/ScriptableObjects/Items/FlowerEssences/E_Aetherium.asset
+  artifactKey: Guid(389f0b6c4520b0248b15cc9760678a2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/ScriptableObjects/Items/FlowerEssences/E_Aetherium.asset using Guid(389f0b6c4520b0248b15cc9760678a2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '529d43fcf586509d58f8a62cda0eb436') in 0.012382 seconds 
+  Import took 0.016741 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.228053 seconds.
+  path: Assets/Data/ScriptableObjects/Items/Crystals/C_Yiikium.asset
+  artifactKey: Guid(1a6dc5465dc45754ea98773b964ddb77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/ScriptableObjects/Items/Crystals/C_Yiikium.asset using Guid(1a6dc5465dc45754ea98773b964ddb77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46401200569e420a2dfb25eed6eaac31') in 0.013930 seconds 
+  Import took 0.018616 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.369000 seconds.
+  path: Assets/Data/ScriptableObjects/Items/Crystals/C_Aetherium.asset
+  artifactKey: Guid(edeb5b5c845609143a0e313649deb3c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/ScriptableObjects/Items/Crystals/C_Aetherium.asset using Guid(edeb5b5c845609143a0e313649deb3c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65aaaa3211854a64a54dc6d46267b8b6') in 0.012968 seconds 
+  Import took 0.017776 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.396656 seconds.
+  path: Assets/Data/ScriptableObjects/Items/Crystals/C_Flexilis.asset
+  artifactKey: Guid(6620a95fa6c954c40bc8a0e3ea02f38f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/ScriptableObjects/Items/Crystals/C_Flexilis.asset using Guid(6620a95fa6c954c40bc8a0e3ea02f38f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1db3fd299fa2f28e018ada2cc53983aa') in 0.011779 seconds 
+  Import took 0.017189 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.170927 seconds.
+  path: Assets/Data/ScriptableObjects/Items/Crystals/C_Solarite.asset
+  artifactKey: Guid(a15c2920df152d544899881180cb5e57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/ScriptableObjects/Items/Crystals/C_Solarite.asset using Guid(a15c2920df152d544899881180cb5e57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '959b6fe0fe32e7259cad48bc8142f7b9') in 0.011029 seconds 
+  Import took 0.015257 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.013751 seconds.
+  path: Assets/Data/ScriptableObjects/Items/Tools
+  artifactKey: Guid(1ae91bfa1775e5e4983017ec239f6829) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/ScriptableObjects/Items/Tools using Guid(1ae91bfa1775e5e4983017ec239f6829) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f764cf164138ead3aa6d5a225e03e753') in 0.010531 seconds 
+  Import took 0.017297 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.720986 seconds.
+  path: Assets/Data/ScriptableObjects/Items/Tools/T_Hammer.asset
+  artifactKey: Guid(a14217cdf9cb99547b5fc79e4e1f976f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/ScriptableObjects/Items/Tools/T_Hammer.asset using Guid(a14217cdf9cb99547b5fc79e4e1f976f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2607723b648304ea8e4af201802c7eef') in 0.034703 seconds 
+  Import took 0.041719 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 33.355860 seconds.
+  path: Assets/Data/ScriptableObjects/Recipes/Placeables/R_B_Condenser.asset
+  artifactKey: Guid(f37e9be5a9bbeb84386ccf87ecd97114) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/ScriptableObjects/Recipes/Placeables/R_B_Condenser.asset using Guid(f37e9be5a9bbeb84386ccf87ecd97114) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22ad24d7bee15fe24858ae91d6314ae2') in 0.025433 seconds 
+  Import took 0.035190 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.188461 seconds.
+  path: Assets/Data/ScriptableObjects/Recipes/Placeables/Pylon.asset
+  artifactKey: Guid(5f5d1f6d58858c64fb5a7431ba41439f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/ScriptableObjects/Recipes/Placeables/Pylon.asset using Guid(5f5d1f6d58858c64fb5a7431ba41439f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0919a36dfe5adc1f6d0e1209a98a8361') in 0.011665 seconds 
+  Import took 0.016079 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 25.155295 seconds.
+  path: Assets/Data/ScriptableObjects/Recipes/Placeables/R-B_Pylon.asset
+  artifactKey: Guid(5f5d1f6d58858c64fb5a7431ba41439f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/ScriptableObjects/Recipes/Placeables/R-B_Pylon.asset using Guid(5f5d1f6d58858c64fb5a7431ba41439f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b19e7a6d47c96993fa838e0d82fe2250') in 0.012486 seconds 
+  Import took 0.017095 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.650457 seconds.
+  path: Assets/Data/ScriptableObjects/Recipes/Placeables/R-B_Condenser.asset
+  artifactKey: Guid(f37e9be5a9bbeb84386ccf87ecd97114) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/ScriptableObjects/Recipes/Placeables/R-B_Condenser.asset using Guid(f37e9be5a9bbeb84386ccf87ecd97114) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e6ca0eb4202584b0e4b24da7f12b891') in 0.025630 seconds 
+  Import took 0.031171 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.417797 seconds.
+  path: Assets/Data/ScriptableObjects/Recipes/Placeables/Crusher.asset
+  artifactKey: Guid(90ff1283f3209ca44af3411da333c22b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/ScriptableObjects/Recipes/Placeables/Crusher.asset using Guid(90ff1283f3209ca44af3411da333c22b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be47f0aa9e4d22eb1d9c2ecc984f41f9') in 0.011246 seconds 
+  Import took 0.014323 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.642365 seconds.
+  path: Assets/Data/ScriptableObjects/Recipes/Placeables/R-B_Crusher.asset
+  artifactKey: Guid(90ff1283f3209ca44af3411da333c22b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/ScriptableObjects/Recipes/Placeables/R-B_Crusher.asset using Guid(90ff1283f3209ca44af3411da333c22b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89d7f74768e56329f0062cd14a54b22b') in 0.020232 seconds 
+  Import took 0.026730 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.111283 seconds.
+  path: Assets/Data/ScriptableObjects/Recipes/Resources/R-C_AetheriumCrystal.asset
+  artifactKey: Guid(685e3d34a6dc07749954a2bde6532cd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/ScriptableObjects/Recipes/Resources/R-C_AetheriumCrystal.asset using Guid(685e3d34a6dc07749954a2bde6532cd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bef0c6c3f59c50befe0fc4c8d1b3a33d') in 0.009652 seconds 
+  Import took 0.013506 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.914627 seconds.
+  path: Assets/Data/ScriptableObjects/Recipes/Resources/R-C_FlexilisCrystal.asset
+  artifactKey: Guid(6aa2ce8b536fcfa4fbb1e063ac54cfd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/ScriptableObjects/Recipes/Resources/R-C_FlexilisCrystal.asset using Guid(6aa2ce8b536fcfa4fbb1e063ac54cfd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1231198ba891efc663794166c78926b6') in 0.024715 seconds 
+  Import took 0.031007 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.684354 seconds.
+  path: Assets/Data/ScriptableObjects/Recipes/Resources/R-C_SolariteCrystal.asset
+  artifactKey: Guid(bf85dfb9c399ed7429280a9dc8aa3941) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/ScriptableObjects/Recipes/Resources/R-C_SolariteCrystal.asset using Guid(bf85dfb9c399ed7429280a9dc8aa3941) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb7955a5583cd9e87f50fff1315771b3') in 0.015486 seconds 
+  Import took 0.020272 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.609637 seconds.
+  path: Assets/Data/ScriptableObjects/Recipes/Resources/R-C_YiikiumCrystal.asset
+  artifactKey: Guid(de15d9f891f1fb140be93d88e86eed45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/ScriptableObjects/Recipes/Resources/R-C_YiikiumCrystal.asset using Guid(de15d9f891f1fb140be93d88e86eed45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1efacfe478d54213a381091f557eacfb') in 0.021623 seconds 
+  Import took 0.028635 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 64.100210 seconds.
+  path: Assets/Data/ScriptableObjects/Items/Placeables/B_Condenser 1.asset
+  artifactKey: Guid(412098c5bf4a0f24ab02b69e24f323fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/ScriptableObjects/Items/Placeables/B_Condenser 1.asset using Guid(412098c5bf4a0f24ab02b69e24f323fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7c6b59bc363753dcf174a4e5aa484bf') in 0.026257 seconds 
+  Import took 0.033840 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.608843 seconds.
+  path: Assets/Data/ScriptableObjects/Items/Placeables/B_Mixer.asset
+  artifactKey: Guid(412098c5bf4a0f24ab02b69e24f323fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/ScriptableObjects/Items/Placeables/B_Mixer.asset using Guid(412098c5bf4a0f24ab02b69e24f323fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f908d87cec995cf8d4bd2c4b83d9bb2') in 0.022857 seconds 
+  Import took 0.029150 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.555946 seconds.
+  path: Assets/Data/ScriptableObjects/Items/Placeables/B_Mixer 1.asset
+  artifactKey: Guid(3bd5251271a298e489e371046928103a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/ScriptableObjects/Items/Placeables/B_Mixer 1.asset using Guid(3bd5251271a298e489e371046928103a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9cb60f825b85e00bb2f40340c016b25') in 0.027910 seconds 
+  Import took 0.036103 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.151853 seconds.
+  path: Assets/Data/ScriptableObjects/Items/Placeables/B_Shaper.asset
+  artifactKey: Guid(3bd5251271a298e489e371046928103a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/ScriptableObjects/Items/Placeables/B_Shaper.asset using Guid(3bd5251271a298e489e371046928103a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0489f22a3719f705b06280997a8b879') in 0.032993 seconds 
+  Import took 0.040981 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.482907 seconds.
+  path: Assets/Data/ScriptableObjects/Items/Placeables/B_Shaper 1.asset
+  artifactKey: Guid(2a090d49d7ded53408212b47c6490ffc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/ScriptableObjects/Items/Placeables/B_Shaper 1.asset using Guid(2a090d49d7ded53408212b47c6490ffc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '88703a5fca3f402dcc15baf6a5aa5fb7') in 0.029440 seconds 
+  Import took 0.037081 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.578099 seconds.
+  path: Assets/Data/ScriptableObjects/Items/Placeables/B_Dehydrator.asset
+  artifactKey: Guid(2a090d49d7ded53408212b47c6490ffc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/ScriptableObjects/Items/Placeables/B_Dehydrator.asset using Guid(2a090d49d7ded53408212b47c6490ffc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07f560cf32754833ee3e34a889ed6d5f') in 0.011614 seconds 
+  Import took 0.015531 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 44.523218 seconds.
+  path: Assets/Data/ScriptableObjects/Items/Placeables/B_Shaper.asset
+  artifactKey: Guid(3bd5251271a298e489e371046928103a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/ScriptableObjects/Items/Placeables/B_Shaper.asset using Guid(3bd5251271a298e489e371046928103a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e22b8364357533a017c131d843c2acd6') in 0.004909 seconds 
+  Import took 0.009685 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.522316 seconds.
+  path: Assets/Data/ScriptableObjects/Recipes/Placeables/R-B_Condenser 1.asset
+  artifactKey: Guid(718766d011a642f45811c088795794fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/ScriptableObjects/Recipes/Placeables/R-B_Condenser 1.asset using Guid(718766d011a642f45811c088795794fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd09bd9116d6758bdbfe3a848840048a8') in 0.018804 seconds 
+  Import took 0.023973 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.302165 seconds.
+  path: Assets/Data/ScriptableObjects/Recipes/Placeables/R-B_Mixer.asset
+  artifactKey: Guid(718766d011a642f45811c088795794fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/ScriptableObjects/Recipes/Placeables/R-B_Mixer.asset using Guid(718766d011a642f45811c088795794fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '755d779ff25c16736b16b72d248b508e') in 0.012179 seconds 
+  Import took 0.016773 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 19.763029 seconds.
+  path: Assets/Data/ScriptableObjects/Recipes/Placeables/R-B_Mixer 1.asset
+  artifactKey: Guid(054201977a039574f83cfe15629a56b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/ScriptableObjects/Recipes/Placeables/R-B_Mixer 1.asset using Guid(054201977a039574f83cfe15629a56b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45f2f9e075ed901adc04584e5cbd3d8f') in 0.018018 seconds 
+  Import took 0.025188 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.066965 seconds.
+  path: Assets/Data/ScriptableObjects/Recipes/Placeables/R-B_Shaper.asset
+  artifactKey: Guid(054201977a039574f83cfe15629a56b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/ScriptableObjects/Recipes/Placeables/R-B_Shaper.asset using Guid(054201977a039574f83cfe15629a56b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dfe5fd1b5b337491747e2fa101911f7b') in 0.014405 seconds 
+  Import took 0.019066 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.393019 seconds.
+  path: Assets/Data/ScriptableObjects/Recipes/Placeables/R-B_Shaper 1.asset
+  artifactKey: Guid(a0555142e4b87e249b1f7b5d440c2a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/ScriptableObjects/Recipes/Placeables/R-B_Shaper 1.asset using Guid(a0555142e4b87e249b1f7b5d440c2a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7d23d2b2470b51b548a2fe307121753') in 0.009083 seconds 
+  Import took 0.012950 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.412517 seconds.
+  path: Assets/Data/ScriptableObjects/Recipes/Placeables/R-B_Dehydrator.asset
+  artifactKey: Guid(a0555142e4b87e249b1f7b5d440c2a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/ScriptableObjects/Recipes/Placeables/R-B_Dehydrator.asset using Guid(a0555142e4b87e249b1f7b5d440c2a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59fa066646bae7804796b830b47b0142') in 0.011318 seconds 
+  Import took 0.015640 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.364258 seconds.
+  path: Assets/Data/ScriptableObjects/Recipes/Placeables/R-B_Dehydrator.asset
+  artifactKey: Guid(a0555142e4b87e249b1f7b5d440c2a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/ScriptableObjects/Recipes/Placeables/R-B_Dehydrator.asset using Guid(a0555142e4b87e249b1f7b5d440c2a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b3b8dea66cb5071fb1f5e03e29b115ee') in 0.013270 seconds 
+  Import took 0.024172 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 209.775397 seconds.
+  path: Assets/Prefabs/Resources/Flowers/Flower.prefab
+  artifactKey: Guid(1e8e8fc8942145d458b9c9e0f556506f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Resources/Flowers/Flower.prefab using Guid(1e8e8fc8942145d458b9c9e0f556506f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2aa320c9fe8a894c6961f0763f9d23b') in 0.040734 seconds 
+  Import took 0.046799 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.349068 seconds.
+  path: Assets/Prefabs/Resources/Flowers/Flower.prefab
+  artifactKey: Guid(1e8e8fc8942145d458b9c9e0f556506f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Resources/Flowers/Flower.prefab using Guid(1e8e8fc8942145d458b9c9e0f556506f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b3ca70fe3d9f385c35d59ea540edb9e') in 0.006462 seconds 
+  Import took 0.010406 seconds .
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file

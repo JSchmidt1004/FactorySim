@@ -13,6 +13,7 @@ public class Placement : MonoBehaviour
 
     Placeable chosenObject;
     GameObject preview;
+    LineRenderer lineRenderer;
 
     float previewRotation;
 
@@ -23,7 +24,18 @@ public class Placement : MonoBehaviour
             if (validPlacement)
             {
                 Transform location = preview.transform;
-                Instantiate(chosenObject, location.position, location.rotation);
+                Placeable placedObject = Instantiate(chosenObject, location.position, location.rotation);
+
+                if (placedObject.Type == Placeable.eType.Factory)
+                {
+                    Factory factory = placedObject.GetComponent<Factory>();
+                    if (factory != null)
+                    {
+                        factory.connectedInventory = ScriptableObject.CreateInstance<InventoryObject>();
+                        factory.connectedInventory.slotCount = factory.connectedInventory.Container.Length;
+                    }
+                }
+
             }
         }
     }
@@ -34,6 +46,13 @@ public class Placement : MonoBehaviour
     }
 
     #region UnityDefaults
+
+    void Awake()
+    {
+        lineRenderer = GetComponent<LineRenderer>();
+
+        lineRenderer.enabled = false;
+    }
 
     void Update()
     {
@@ -84,17 +103,35 @@ public class Placement : MonoBehaviour
             //Set to ignore raycast so that the preview doesn't fly towards our face from moving in front of itself
             previewGO.layer = LayerMask.NameToLayer("Ignore Raycast");
         }
+
+        if (chosenObject.Type == Placeable.eType.Conveyor)
+        {
+            lineRenderer.enabled = true;
+        }
+        else
+        {
+            lineRenderer.enabled = false;
+        }
     }
 
     public void DestroyPreview()
     {
-        if (previewActive) Destroy(preview);
+        if (previewActive)
+        {
+            Destroy(preview);
+            if (chosenObject.Type == Placeable.eType.Conveyor)
+            {
+                lineRenderer.enabled = false;
+            }
+        }
     }
 
     public void MovePreview(RaycastHit hit)
     {
         preview.transform.position = hit.point;
         preview.transform.rotation = Quaternion.FromToRotation(Vector3.up, hit.normal);
+
+        if (chosenObject.Type == Placeable.eType.Conveyor) SetupCircle();
     }
 
     public void SnapPreview()
@@ -176,4 +213,22 @@ public class Placement : MonoBehaviour
     }
 
     #endregion
+
+    private void SetupCircle()
+    {
+        lineRenderer.widthMultiplier = 0.05f;
+        int vertexCount = 30;
+
+        float deltaTheta = (2f * Mathf.PI) / vertexCount;
+        float theta = 0f;
+
+        lineRenderer.positionCount = vertexCount;
+        for (int i = 0; i < lineRenderer.positionCount; i++)
+        {
+            Vector3 pos = new Vector3(chosenObject.radius * Mathf.Cos(theta), 0.5f, chosenObject.radius * Mathf.Sin(theta));
+            lineRenderer.SetPosition(i, preview.transform.position + pos);
+            theta += deltaTheta;
+        }
+
+    }
 }

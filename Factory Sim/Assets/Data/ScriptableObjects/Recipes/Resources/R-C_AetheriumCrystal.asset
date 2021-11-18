@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f66f205be66fb444bb68843195b45c39, type: 3}
+  m_Name: R-C_AetheriumCrystal
+  m_EditorClassIdentifier: 
+  RecipeName: Aetherium Crystal
+  craftTime: 1
+  outcome: {fileID: 11400000, guid: edeb5b5c845609143a0e313649deb3c8, type: 2}
+  expectedResources:
+  - name: Aetherium Essence
+    resourceObject:
+      item: {fileID: 11400000, guid: 389f0b6c4520b0248b15cc9760678a2c, type: 2}
+      amount: 0
+    count: 5
